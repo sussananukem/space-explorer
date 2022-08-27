@@ -1,10 +1,9 @@
-
 body {
   background-image: url("../assets/images/background-home-desktop.png");
   color: white;
   overflow: hidden;
   font-family: 'Alumni Sans Pinstripe', sans-serif;
-    }
+}
 
 .nav-menu-items {
   display: inline-flex;
@@ -12,72 +11,68 @@ body {
   color: white;
   padding: 0 10px;
   font-family: 'Alumni Sans Pinstripe', sans-serif;
-
 }
 
 .nav-menu-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(15,15,15);
-  background: linear-gradient(90deg, rgba(15,15,15,1) 0%, rgba(87,103,133,1) 47%, rgba(2,0,36,1) 100%, rgba(52,54,139,1) 100%);
+  background: rgb(15, 15, 15);
+  background: linear-gradient(90deg, rgba(15, 15, 15, 1) 0%, rgba(87, 103, 133, 1) 47%, rgba(2, 0, 36, 1) 100%, rgba(52, 54, 139, 1) 100%);
   opacity: 0.9;
   padding: 5px 0;
   width: 40%;
 }
 
-.nav-menu-container p{
+.nav-menu-container p {
   color: white;
 }
 
-.logo{
+.logo {
   margin: 10px 0 0 100px;
   width: 35px;
 }
 
-.facts{
+.facts {
   /* width: 3; */
   font-size: 16px;
   /* word-spacing: 1px; */
   line-height: 2
 }
 
-.d-facts{
-width: 30%;}
+.d-facts {
+  width: 30%;
+}
 
-.xplor{
+.xplor {
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
-letter-spacing: 1px;
-  width: 150px;
-  height: 150px;
+  letter-spacing: 1px;
+  width: 200px;
+  height: 200px;
   color: black;
   border-radius: 200px;
   background-color: white;
-  margin: 150px 100px;
+  margin: 100px 100px;
 }
 
-main{
+main {
   margin: 180px 230px;
 }
 
-
-
-section{
+section {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
- }
+}
 
-
-span{
+span {
   font-weight: bolder;
   padding: 0 5px;
-
 }
 
 nav {
@@ -87,19 +82,18 @@ nav {
   margin-top: 50px;
 }
 
-h1{
+h1 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: lighter;
   font-size: 100px;
   margin: 0;
-
 }
 
-h3{
+h3 {
   font-size: 24px;
   word-spacing: 1px;
   font-weight: 500;
- }
+}
 
 hr {
   width: 48%;
