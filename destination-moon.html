@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Space Explorer</title>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Barlow+Condensed:wght@300&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link rel="icon" href="assets/favicon-32x32.png">
+
+  <!-- STYLESHEETS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/c4fcc9c941.js" crossorigin="anonymous"></script>
+
+  <!-- INTERNAL CSS -->
+  <style>
+    @media only screen and (min-width: 375px) {
+      body {
+        background: url("assets/destination/background-destination-mobile.jpg");
+        background-size: cover;
+        height: 100vh;
+        text-align: center;
+      }
+
+      .moon,
+      .info {
+        margin-left: 18px;
+      }
+
+      .dest-body img {
+        width: 180px;
+      }
+
+      .dest-menu ul {
+        margin: auto;
+      }
+
+      .s-txt {
+        font-size: 50px;
+      }
+    }
+
+
+    @media only screen and (min-width: 768px) {
+      body {
+        background: url("assets/destination/background-destination-tablet.jpg");
+        background-size: cover;
+        height: 100vh;
+
+      }
+
+      .s-txt {
+        font-size: 80px;
+      }
+
+      .dest-body img {
+        width: 280px;
+      }
+
+    }
+
+    @media only screen and (min-width: 1024px) {
+      body {
+        background: url("assets/destination/background-destination-desktop.jpg");
+        background-size: cover;
+        height: 100vh;
+        text-align: inherit;
+      }
+
+      .s-txt {
+        font-size: 100px;
+      }
+
+      .dest-body img {
+        width: 80%;
+      }
+
+      .dest-menu ul {
+        margin: inherit;
+      }
+    }
+  </style>
+
+</head>
+
+<body class="container-fluid">
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg my-5">
+    <a href="index.html"> <img src="assets/shared/logo.svg" alt="logo"></a>
+    <button class="navbar-toggler  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- MENU LIST -->
+    <div class="menu-items collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item na"><a class="nav-link text-light" aria-current="page" href="index.html">00 HOME</a></li>
+        <li class="nav-item "><a class="nav-link active text-light" href="destination.html">01 DESTINATION</a></li>
+        <li class="nav-item na"><a class="nav-link text-light" href="crew.html">02 CREW</a></li>
+        <li class="nav-item na"><a class="nav-link text-light" href="technology.html">03 TECHNOLOGY</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="dest-body">
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 class="f-txt lh-lg mb-5"> <span class="one pe-2">01</span> PICK YOUR DESTINATION</h3>
+        <img src="assets/destination/image-moon.png" alt="moon-img">
+      </div>
+
+      <div class="col-lg-6 mt-5">
+        <div class="navbar navbar-expand dest-menu">
+          <ul class="navbar-nav">
+            <!-- SWAP THE na CLASS TO REMOVE THE EXTRA UNDERLINE ON THE ACTIVE TAB, AND ADD THE ACTIVE CLASS TO THE CURRENT TAB ELEMent -->
+            <li class="nav-item"><a class="nav-link active text-light" aria-current="page" href="destination-moon.html">MOON</a></li>
+            <li class="nav-item na"><a class="nav-link text-light" href="destination-mars.html">MARS</a></li>
+            <li class="nav-item na"><a class="nav-link text-light" href="destination-europa.html">EUROPA</a></li>
+            <li class="nav-item na"><a class="nav-link text-light" href="destination-titan.html">TITAN</a></li>
+          </ul>
+        </div>
+
+        <div class="moon">
+          <h1 class="s-txt mt-4 mb-2">MOON</h1>
+          <p class="t-text lh-lg fs-5 mb-4">See our planet as you’ve never seen it before.
+            A perfect relaxing trip away to help regain perspective and come back refreshed.
+            While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+          </p>
+
+        </div>
+
+
+        <div class="row info py-4 mt-2 justify-content-between">
+          <div class="col-4 distance align-baseline">
+            <h3 class="m-txt"> AVG. DISTANCE</h3>
+            <h2 class="m-num">384,000 KM</h2>
+          </div>
+
+          <div class="col-4 ">
+            <h3 class="m-txt"> EST. TRAVEL TIME</h3>
+            <h2 class="m-num">3 DAYS</h2>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- BOOTSTRAP SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

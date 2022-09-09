@@ -1,50 +1,63 @@
 body {
   color: white;
-}
+ }
 
 a {
   text-decoration: none;
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 1% 15%;
 }
+
+ /* START OF HOME PAGE */
 
 /* NAVIGATION */
 .navbar {
   background-color: transparent;
   backdrop-filter: blur(10px);
-  /* z-index: 100; */
-}
+ }
 
 .nav-item {
   padding: 0 18px;
 }
 
-.nav-item a{
+.nav-item a {
   font-size: 16px;
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 2.35px;
- }
+}
+
 .navbar-nav .na:hover {
   border-bottom: 3px solid #B5B5C3;
 }
+
 .active {
-  border-bottom: 3px solid white;}
+  border-bottom: 3px solid white;
+}
 
 /* MAIN */
 .page {
   margin-top: 10rem;
 }
 
+.f-txt, .t-text, .m-txt {
+  font-family: "Barlow Condensed", sans-serif;
 
+}
+
+.s-txt{
+  font-family: "Bellefair", serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Explore Button */
 
 .xplor-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 274px;
-  height: 274px;
   border-radius: 100%;
   background-color: white;
   color: black;
@@ -52,12 +65,40 @@ a {
   margin-right: 5vw;
 }
 
-.xplor-btn:hover {
-  box-shadow: 0 0 0 50px #ebf2fa;
-  transition: 0.5s;
+
+.xplor-btn p, .m-num {
+   font-family: "Bellefair", serif;
 }
 
-.xplor-btn p {
-  font-size: 32px;
-  font-family: "Bellefair", serif;
+/* END OF HOME PAGE */
+
+
+ /* START OF DESTINATION PAGE */
+.dest-body{
+  margin-top: 5rem;
+}
+
+/* COLUMN TWO-MOON DESCRIPTION */
+.moon{
+  border-bottom: 1px solid #B5B5C3;
+
+ }
+
+/* INFO ON DISTANCE */
+ .distance{
+   padding-left: 0;
+ }
+
+/* TEXT FOR DISTANCE AND TRAVEL TIME */
+.m-txt{
+  font-size: 16px;
+}
+
+.m-num{
+  font-size: 1.5rem;
+}
+
+/* COLOR FOR THIRD TEXT, NAVBAR TEXT AND THE 01 TEXT */
+.t-text, .nav-link, .one{
+  color: #d0d6f9;
 }
