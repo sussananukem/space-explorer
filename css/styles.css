@@ -1,104 +1,63 @@
 body {
-  background-image: url("../assets/images/background-home-desktop.png");
   color: white;
-  overflow: hidden;
-  font-family: 'Alumni Sans Pinstripe', sans-serif;
 }
 
-.nav-menu-items {
-  display: inline-flex;
+a {
+  text-decoration: none;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+/* NAVIGATION */
+.navbar {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  /* z-index: 100; */
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-item a{
   font-size: 16px;
-  color: white;
-  padding: 0 10px;
-  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.35px;
+ }
+.navbar-nav .na:hover {
+  border-bottom: 3px solid #B5B5C3;
+}
+.active {
+  border-bottom: 3px solid white;}
+
+/* MAIN */
+.page {
+  margin-top: 10rem;
 }
 
-.nav-menu-container {
+
+
+.xplor-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(15, 15, 15);
-  background: linear-gradient(90deg, rgba(15, 15, 15, 1) 0%, rgba(87, 103, 133, 1) 47%, rgba(2, 0, 36, 1) 100%, rgba(52, 54, 139, 1) 100%);
-  opacity: 0.9;
-  padding: 5px 0;
-  width: 40%;
-}
-
-.nav-menu-container p {
-  color: white;
-}
-
-.logo {
-  margin: 10px 0 0 100px;
-  width: 35px;
-}
-
-.facts {
-  /* width: 3; */
-  font-size: 16px;
-  /* word-spacing: 1px; */
-  line-height: 2
-}
-
-.d-facts {
-  width: 30%;
-}
-
-.xplor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 24px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  width: 200px;
-  height: 200px;
-  color: black;
-  border-radius: 200px;
+  width: 274px;
+  height: 274px;
+  border-radius: 100%;
   background-color: white;
-  margin: 100px 100px;
+  color: black;
+  transition: 0.5s;
+  margin-right: 5vw;
 }
 
-main {
-  margin: 180px 230px;
+.xplor-btn:hover {
+  box-shadow: 0 0 0 50px #ebf2fa;
+  transition: 0.5s;
 }
 
-section {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-span {
-  font-weight: bolder;
-  padding: 0 5px;
-}
-
-nav {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-top: 50px;
-}
-
-h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: lighter;
-  font-size: 100px;
-  margin: 0;
-}
-
-h3 {
-  font-size: 24px;
-  word-spacing: 1px;
-  font-weight: 500;
-}
-
-hr {
-  width: 48%;
-  margin: 30px 0;
-  position: relative;
-  left: 60px;
-  border-color: grey;
+.xplor-btn p {
+  font-size: 32px;
+  font-family: "Bellefair", serif;
 }
