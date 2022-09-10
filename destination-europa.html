@@ -25,12 +25,16 @@
 
   <!-- INTERNAL CSS -->
   <style>
-    @media only screen and (min-width: 375px) {
+    @media only screen and (min-width: 320px) {
       body {
         background: url("assets/destination/background-destination-mobile.jpg");
         background-size: cover;
         height: 100vh;
         text-align: center;
+      }
+
+      .nav-item{
+        padding: 0;
       }
 
       .moon,
@@ -41,6 +45,7 @@
       .dest-body img {
         width: 180px;
       }
+
 
       .dest-menu ul {
         margin: auto;
@@ -58,6 +63,10 @@
         background-size: cover;
         height: 100vh;
 
+      }
+
+      .nav-item{
+        padding: 0 18px;
       }
 
       .s-txt {
@@ -113,6 +122,8 @@
     </div>
   </nav>
 
+
+  <!-- PLANET DESCRIPTION -->
   <section class="dest-body">
     <div class="row">
       <div class="col-lg-6">
@@ -120,6 +131,8 @@
         <img src="assets/destination/image-europa.png" alt="moon-img">
       </div>
 
+
+  <!-- PLANET SUB MENU -->
       <div class="col-lg-6 mt-5">
         <div class="navbar navbar-expand dest-menu">
           <ul class="navbar-nav">
@@ -130,6 +143,7 @@
           </ul>
         </div>
 
+  <!-- PLANET FEATURES -->
         <div class="moon">
           <h1 class="s-txt mt-4 mb-2">EUROPA</h1>
           <p class="t-text lh-lg fs-5 mb-4">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream.
@@ -137,15 +151,15 @@
           </p>
         </div>
 
-
+<!-- PLANET DISTANCE AND TRAVEL TIME -->
         <div class="row info py-4 mt-2  justify-content-between">
-          <div class="col-4 distance align-baseline">
+          <div class="col-md-4 col-sm-12 distance align-baseline">
             <h3 class="m-txt"> AVG. DISTANCE</h3>
             <h2 class="m-num">628 MIL.KM</h2>
           </div>
 
-          <div class="col-4">
-            <h3 class="m-txt"> EST. TRAVEL TIME</h3>
+          <div class="col-md-4 col-sm-12">
+            <h3 class="m-txt w-100"> EST. TRAVEL TIME</h3>
             <h2 class="m-num">3 YEARS</h2>
           </div>
         </div>
